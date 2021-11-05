@@ -10,9 +10,17 @@ func index(w http.ResponseWriter, r *http.Request) {
 	// 定义模板
 
 	// 解析模板
-	t, err := template.ParseFiles("./index.tmpl")
+	// t, err := template.ParseFiles("./index.tmpl")
+	// if err != nil {
+	// 	fmt.Printf("parse template err,failed:%v", err)
+	// 	return
+	// }
+	// 自定义模板
+	t, err := template.New("index.tmpl").
+		Delims("{[", "]}").
+		ParseFiles("./index.tmpl")
 	if err != nil {
-		fmt.Printf("parse template err,failed:%v", err)
+		fmt.Printf("parse template err,faile%v", err)
 		return
 	}
 	// 渲染模板
