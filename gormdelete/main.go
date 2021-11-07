@@ -21,20 +21,20 @@ func main() {
 	defer db.Close()
 	db.AutoMigrate(&User{})
 
-	u1 := User{
-		Name: "mooqle",
-		Age:  22,
-	}
-	db.Create(&u1)
+	// u1 := User{
+	// 	Name: "mooqle",
+	// 	Age:  22,
+	// }
+	// db.Create(&u1)
 
-	u2 := User{
-		Name: "jokereven",
-		Age:  19,
-	}
-	db.Create(&u2)
+	// u2 := User{
+	// 	Name: "jokereven",
+	// 	Age:  19,
+	// }
+	// db.Create(&u2)
 
 	// 删除
-	var u = User{}
-	u.ID = 2
-	db.Debug().Delete(&u)
+	// var u = User{}
+	// u.ID = 2
+	// db.Debug().Delete(&u)
 }
