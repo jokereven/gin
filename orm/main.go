@@ -44,4 +44,3 @@ func main() {
 	// 删除
 	db.Delete(&u)
 }
-
