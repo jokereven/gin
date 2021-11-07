@@ -45,7 +45,4 @@ func main() {
 	// var user []User
 	// db.Find(&user)
 	// fmt.Println(user)
-
-
-
-}0
+}
